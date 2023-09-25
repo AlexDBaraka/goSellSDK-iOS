@@ -6,6 +6,7 @@
 //
 
 import class TapSearchViewV2.TapSearchView
+import class    UIKit.UIColor.UIColor
 
 internal extension TapSearchView {
 	

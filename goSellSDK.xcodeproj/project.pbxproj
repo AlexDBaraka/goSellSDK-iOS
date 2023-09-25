@@ -128,7 +128,7 @@
 		14FC5D5E2242E47700930204 /* AddressType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC5D5C2242E47700930204 /* AddressType.swift */; };
 		14FC5D612242E4CB00930204 /* Equatable+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC5D5F2242E4CB00930204 /* Equatable+Additions.swift */; };
 		14FC5D622242E4CB00930204 /* Comparable+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC5D602242E4CB00930204 /* Comparable+Additions.swift */; };
-		46624B524CC48A2E4DD46449 /* Pods_goSellSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48434EACAB5964D7D7C9EBCD /* Pods_goSellSDK.framework */; };
+		58778000B8143C570D0B9D14 /* Pods_goSellSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6647ADB7BFBD5B5388C897 /* Pods_goSellSDK.framework */; };
 		A401FC7E2100FE8B002DBA73 /* InteractiveTransitionControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401FC7C2100FE8B002DBA73 /* InteractiveTransitionControllerDelegate.swift */; };
 		A401FC802100FE8B002DBA73 /* PopupOverlaySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401FC7D2100FE8B002DBA73 /* PopupOverlaySupport.swift */; };
 		A401FC8E2101DA6D002DBA73 /* CardScannerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401FC8A2101DA6B002DBA73 /* CardScannerViewControllerDelegate.swift */; };
@@ -410,7 +410,6 @@
 		A4F7106720B5542C0064FE4B /* ProportionalToOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7106620B5542C0064FE4B /* ProportionalToOrigin.swift */; };
 		A4F7106D20B554480064FE4B /* TextInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7106A20B554480064FE4B /* TextInputType.swift */; };
 		A4F7107020B5546A0064FE4B /* AddressFieldInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7106F20B5546A0064FE4B /* AddressFieldInputType.swift */; };
-		D67B4B5BCDF9B017077CE89A /* Pods_goSellSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEB7048D062EDBFA88DDD48 /* Pods_goSellSDK.framework */; };
 		D70054A423A11AE600D15A4C /* PaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70054A323A11AE600D15A4C /* PaymentType.swift */; };
 		E828073223C71A5900C628DD /* SetupApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E828073123C71A5900C628DD /* SetupApplePayViewController.swift */; };
 		E828073423C71BC600C628DD /* SetupApplePayViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E828073323C71BC600C628DD /* SetupApplePayViewControllerDelegate.swift */; };
@@ -557,8 +556,8 @@
 		14FC5D5C2242E47700930204 /* AddressType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressType.swift; sourceTree = "<group>"; };
 		14FC5D5F2242E4CB00930204 /* Equatable+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Equatable+Additions.swift"; sourceTree = "<group>"; };
 		14FC5D602242E4CB00930204 /* Comparable+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable+Additions.swift"; sourceTree = "<group>"; };
-		16A38A8831C7BCCD73B43B9E /* Pods-goSellSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goSellSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-goSellSDK/Pods-goSellSDK.release.xcconfig"; sourceTree = "<group>"; };
-		48434EACAB5964D7D7C9EBCD /* Pods_goSellSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goSellSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6647ADB7BFBD5B5388C897 /* Pods_goSellSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goSellSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23379A578D0DC92600B355D1 /* Pods-goSellSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goSellSDK.debug.xcconfig"; path = "Target Support Files/Pods-goSellSDK/Pods-goSellSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		A401FC7C2100FE8B002DBA73 /* InteractiveTransitionControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveTransitionControllerDelegate.swift; sourceTree = "<group>"; };
 		A401FC7D2100FE8B002DBA73 /* PopupOverlaySupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupOverlaySupport.swift; sourceTree = "<group>"; };
 		A401FC8A2101DA6B002DBA73 /* CardScannerViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardScannerViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -843,7 +842,7 @@
 		A4F7106620B5542C0064FE4B /* ProportionalToOrigin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProportionalToOrigin.swift; sourceTree = "<group>"; };
 		A4F7106A20B554480064FE4B /* TextInputType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputType.swift; sourceTree = "<group>"; };
 		A4F7106F20B5546A0064FE4B /* AddressFieldInputType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressFieldInputType.swift; sourceTree = "<group>"; };
-		CF65A0C457E3C3D928DEE7AB /* Pods-goSellSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goSellSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-goSellSDK/Pods-goSellSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		B31C84CE34FF74AB3830876D /* Pods-goSellSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goSellSDK.release.xcconfig"; path = "Target Support Files/Pods-goSellSDK/Pods-goSellSDK.release.xcconfig"; sourceTree = "<group>"; };
 		D70054A323A11AE600D15A4C /* PaymentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentType.swift; sourceTree = "<group>"; };
 		E828073123C71A5900C628DD /* SetupApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupApplePayViewController.swift; sourceTree = "<group>"; };
 		E828073323C71BC600C628DD /* SetupApplePayViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupApplePayViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -864,7 +863,6 @@
 		E8CDF34323CA299100E0C847 /* CreateTokenWithApplePayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTokenWithApplePayRequest.swift; sourceTree = "<group>"; };
 		E8CDF34B23CA454900E0C847 /* AppleTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTokenModel.swift; sourceTree = "<group>"; };
 		E8CDF34D23CA45C800E0C847 /* AppleTokenHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTokenHeaderModel.swift; sourceTree = "<group>"; };
-		FEEB7048D062EDBFA88DDD48 /* Pods_goSellSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goSellSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -872,8 +870,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46624B524CC48A2E4DD46449 /* Pods_goSellSDK.framework in Frameworks */,
-				D67B4B5BCDF9B017077CE89A /* Pods_goSellSDK.framework in Frameworks */,
+				58778000B8143C570D0B9D14 /* Pods_goSellSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,40 +1233,14 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
-		2900C46CE6138AD739CAC575 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48434EACAB5964D7D7C9EBCD /* Pods_goSellSDK.framework */,
-			);
-			name = Frameworks;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		425B5EF965F041FCC57C86F2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FEEB7048D062EDBFA88DDD48 /* Pods_goSellSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		67C9033215A5F155FB89B897 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CF65A0C457E3C3D928DEE7AB /* Pods-goSellSDK.debug.xcconfig */,
-				16A38A8831C7BCCD73B43B9E /* Pods-goSellSDK.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A40D320C2031E6DE0030FDDE = {
 			isa = PBXGroup;
 			children = (
 				A4118B82203AD845003415C2 /* goSellSDK.podspec */,
 				A40D32182031E6DE0030FDDE /* goSellSDK */,
-				67C9033215A5F155FB89B897 /* Pods */,
 				A40D32172031E6DE0030FDDE /* Products */,
-				425B5EF965F041FCC57C86F2 /* Frameworks */,
+				D489B21680EC409BFD948715 /* Pods */,
+				AADF531B47E06642485CBF7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -1287,7 +1258,6 @@
 			children = (
 				143D7CB3223AC7770089CFBA /* Core */,
 				143D7CB4223AC7C20089CFBA /* ErrorReporting */,
-				2900C46CE6138AD739CAC575 /* Frameworks */,
 				A40D32192031E6DE0030FDDE /* goSellSDK.h */,
 				A40D321A2031E6DE0030FDDE /* Info.plist */,
 			);
@@ -1773,6 +1743,24 @@
 			path = Measurements;
 			sourceTree = "<group>";
 		};
+		AADF531B47E06642485CBF7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C6647ADB7BFBD5B5388C897 /* Pods_goSellSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D489B21680EC409BFD948715 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23379A578D0DC92600B355D1 /* Pods-goSellSDK.debug.xcconfig */,
+				B31C84CE34FF74AB3830876D /* Pods-goSellSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E82A208623EC00FE00F152C5 /* AsyncPaymentResultView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1799,7 +1787,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A40D322A2031E6DE0030FDDE /* Build configuration list for PBXNativeTarget "goSellSDK" */;
 			buildPhases = (
-				EAE64C280CF7B3D5EA90A459 /* [CP] Check Pods Manifest.lock */,
+				CAD6B54EE97E9F4FF7DEF84C /* [CP] Check Pods Manifest.lock */,
 				A40D32112031E6DE0030FDDE /* Sources */,
 				A40D32122031E6DE0030FDDE /* Frameworks */,
 				A40D32132031E6DE0030FDDE /* Headers */,
@@ -1875,16 +1863,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EAE64C280CF7B3D5EA90A459 /* [CP] Check Pods Manifest.lock */ = {
+		CAD6B54EE97E9F4FF7DEF84C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-goSellSDK-checkManifestLockResult.txt",
 			);
@@ -2532,7 +2524,7 @@
 		};
 		A40D322B2031E6DE0030FDDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF65A0C457E3C3D928DEE7AB /* Pods-goSellSDK.debug.xcconfig */;
+			baseConfigurationReference = 23379A578D0DC92600B355D1 /* Pods-goSellSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -2563,7 +2555,7 @@
 		};
 		A40D322C2031E6DE0030FDDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16A38A8831C7BCCD73B43B9E /* Pods-goSellSDK.release.xcconfig */;
+			baseConfigurationReference = B31C84CE34FF74AB3830876D /* Pods-goSellSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

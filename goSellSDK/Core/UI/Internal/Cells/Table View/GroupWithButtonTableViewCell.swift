@@ -9,6 +9,7 @@ import struct	TapAdditionsKitV2.TypeAlias
 import class	UIKit.UIButton.UIButton
 import class	UIKit.UILabel.UILabel
 import class	UIKit.UIView.UIView
+import class    UIKit.UIColor
 
 internal class GroupWithButtonTableViewCell: BaseTableViewCell {
 	

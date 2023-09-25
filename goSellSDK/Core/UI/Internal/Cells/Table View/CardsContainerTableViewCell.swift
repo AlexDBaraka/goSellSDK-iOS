@@ -6,6 +6,7 @@
 //
 
 import class    UIKit.UICollectionView.UICollectionView
+import class    UIKit.UIColor.UIColor
 
 internal class CardsContainerTableViewCell: BaseTableViewCell {
     

@@ -79,8 +79,7 @@ internal class CreateAuthorizeRequest: CreateChargeRequest {
                    shouldSaveCard:      shouldSaveCard,
                    statementDescriptor: statementDescriptor,
                    requires3DSecure:    requires3DSecure,
-                   receipt:             receipt,
-                   topup: nil)
+                   receipt:             receipt)
     }
 	
 	/// Encodes the contents of the receiver.

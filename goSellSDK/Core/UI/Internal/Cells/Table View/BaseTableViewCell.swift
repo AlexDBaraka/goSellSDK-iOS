@@ -6,6 +6,7 @@
 //
 
 import class UIKit.UITableViewCell.UITableViewCell
+import class    UIKit.UIColor.UIColor
 
 /// Base Table View Cell.
 internal class BaseTableViewCell: UITableViewCell {

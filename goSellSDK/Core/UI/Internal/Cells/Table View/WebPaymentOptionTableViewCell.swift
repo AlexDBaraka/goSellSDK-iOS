@@ -46,19 +46,10 @@ extension WebPaymentOptionTableViewCell: LoadingWithModelCell {
             self.iconImageView?.translatesAutoresizingMaskIntoConstraints = false
             self.iconViewWidthConstraint.constant = 32
             
-            if #available(iOS 13.0, *) {
-               if Process.shared.externalSession?.dataSource?.uiModeDisplay?.userInterface == .dark {
-                self.paddingView.layer.cornerRadius = 8
-                self.paddingView.layer.masksToBounds = true
-                self.iconViewWidthConstraint.constant = 22
-               }else{
-                self.paddingView.layer.cornerRadius = 0
-                self.paddingView.layer.masksToBounds = true
-                self.iconViewWidthConstraint.constant = 32
-                }
-            }
-        
-        
+			self.paddingView.layer.cornerRadius = 0
+			self.paddingView.layer.masksToBounds = true
+			self.iconViewWidthConstraint.constant = 32
+			
             self.layoutIfNeeded()
             self.iconImageView?.layoutIfNeeded()
         }

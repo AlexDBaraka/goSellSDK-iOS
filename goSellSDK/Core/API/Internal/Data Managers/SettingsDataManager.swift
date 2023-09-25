@@ -6,6 +6,7 @@
 //
 
 import func TapSwiftFixesV2.synchronized
+import enum    UIKit.UIUserInterfaceStyle
 
 /// Settings data manager.
 internal final class SettingsDataManager {
@@ -19,9 +20,6 @@ internal final class SettingsDataManager {
     /// Auto computes which ui display mode to adapt to
     @available(iOS 13.0, *)
     internal var displayMode:UIUserInterfaceStyle {
-        if let mode = Process.shared.externalSession?.dataSource?.uiModeDisplay {
-            return mode.userInterface
-        }
         return .light
     }
     

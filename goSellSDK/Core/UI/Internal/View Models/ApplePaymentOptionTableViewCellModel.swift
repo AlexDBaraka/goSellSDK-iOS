@@ -141,13 +141,6 @@ extension ApplePaymentOptionTableViewCellModel: SingleCellModel {
         // First we set the default apple pay button style
         var applPayButtonStyle:PKPaymentButtonStyle = .whiteOutline
         
-        if #available(iOS 13.0, *) {
-            if Process.shared.externalSession?.dataSource?.uiModeDisplay?.userInterface == .dark
-            {
-                applPayButtonStyle = .white
-            }
-       }
-        
         if let session = Process.shared.externalSession, let sessionDatSource = session.dataSource
         {
             if let dataSourceApplePayStyle = sessionDatSource.applePayButtonStyle

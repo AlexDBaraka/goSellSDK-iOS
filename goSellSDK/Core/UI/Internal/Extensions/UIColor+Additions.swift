@@ -12,14 +12,6 @@ internal extension UIColor
 {
     func loadCompatibleDarkModeColor(forColorNamed:String)->UIColor
     {
-        
-        if #available(iOS 13.0, *), Process.shared.externalSession?.dataSource?.uiModeDisplay?.userInterface == .dark {
-            
-            if let color = UIColor(named: forColorNamed, in: .goSellSDKResources, compatibleWith: nil)
-            {
-                return color
-            }
-       }
         return self
     }
 }

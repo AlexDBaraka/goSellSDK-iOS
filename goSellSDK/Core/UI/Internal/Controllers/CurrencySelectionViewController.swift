@@ -15,6 +15,8 @@ import class    UIKit.UITableView.UITableView
 import protocol UIKit.UITableView.UITableViewDataSource
 import protocol UIKit.UITableView.UITableViewDelegate
 import class    UIKit.UITableViewCell.UITableViewCell
+import class    UIKit.UITraitCollection
+import class    UIKit.UIColor
 
 internal class CurrencySelectionViewController: HeaderNavigatedViewControllerWithSearch {
     

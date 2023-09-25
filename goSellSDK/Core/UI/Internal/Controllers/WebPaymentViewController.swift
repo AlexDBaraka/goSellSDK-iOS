@@ -14,6 +14,7 @@ import class    UIKit.UIScreen.UIScreen
 import class	UIKit.UIStoryboard.UIStoryboard
 import class    UIKit.UIStoryboardSegue.UIStoryboardSegue
 import class    UIKit.UIView.UIView
+import class    UIKit.UITraitCollection
 
 internal class WebPaymentViewController: HeaderNavigatedViewController {
     

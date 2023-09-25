@@ -29,6 +29,7 @@ import class    UIKit.UITouch.UITouch
 import enum		UIKit.UIView.UISemanticContentAttribute
 import class    UIKit.UIView.UIView
 import struct   UIKit.UIView.UIViewKeyframeAnimationOptions
+import class    UIKit.UIColor
 
 internal final class OTPInputView: TapNibView {
     

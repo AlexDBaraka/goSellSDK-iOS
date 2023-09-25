@@ -19,6 +19,7 @@ import class    UIKit.UIViewController.UIViewController
 import protocol UIKit.UIViewControllerTransitioning.UIViewControllerAnimatedTransitioning
 import protocol UIKit.UIViewControllerTransitioning.UIViewControllerInteractiveTransitioning
 import protocol UIKit.UIViewControllerTransitioning.UIViewControllerTransitioningDelegate
+import class    UIKit.UITraitCollection
 
 /// Payment View Controller.
 internal class PaymentViewController: SeparateWindowViewController {

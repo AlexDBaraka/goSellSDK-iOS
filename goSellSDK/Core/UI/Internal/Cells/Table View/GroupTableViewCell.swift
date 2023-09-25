@@ -8,6 +8,7 @@
 import CoreGraphics
 import class UIKit.UILabel.UILabel
 import class UIKit.UITableViewCell.UITableViewCell
+import class    UIKit.UIColor.UIColor
 
 internal class GroupTableViewCell: BaseTableViewCell {
     

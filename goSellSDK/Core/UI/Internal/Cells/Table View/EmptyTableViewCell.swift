@@ -7,6 +7,7 @@
 
 import CoreGraphics
 import class UIKit.UITableViewCell.UITableViewCell
+import class    UIKit.UIColor
 
 internal class EmptyTableViewCell: BaseTableViewCell {
     

@@ -22,6 +22,7 @@ import class    UIKit.UITableView.UITableView
 import var      UIKit.UITableView.UITableViewAutomaticDimension
 import class    UIKit.UITableViewCell.UITableViewCell
 import class    UIKit.UIView.UIView
+import class    UIKit.UIColor.UIColor
 
 internal class CardInputTableViewCell: BaseTableViewCell {
     

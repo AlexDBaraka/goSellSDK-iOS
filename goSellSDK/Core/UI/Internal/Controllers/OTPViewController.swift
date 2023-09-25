@@ -24,6 +24,7 @@ import protocol UIKit.UIViewControllerTransitioning.UIViewControllerAnimatedTran
 import protocol UIKit.UIViewControllerTransitioning.UIViewControllerInteractiveTransitioning
 import protocol UIKit.UIViewControllerTransitioning.UIViewControllerTransitioningDelegate
 import class    TapVisualEffectViewV2.TapVisualEffectView
+import class    UIKit.UITraitCollection
 
 /// View controller that handles Tap OTP input.
 internal final class OTPViewController: SeparateWindowViewController {

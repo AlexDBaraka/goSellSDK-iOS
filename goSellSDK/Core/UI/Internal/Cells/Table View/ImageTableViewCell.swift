@@ -6,6 +6,8 @@
 //
 
 import class UIKit.UIImageView.UIImageView
+import class    UIKit.UIView
+import class    UIKit.NSLayoutConstraint
 
 /// Image Table View Cell Class
 internal class ImageTableViewCell: BaseTableViewCell {
@@ -40,15 +42,6 @@ extension ImageTableViewCell: LoadingWithModelCell {
             
             self.paddingWidthConstraint.constant = 32
             self.imageViewWidthConstraint.constant = 32
-            
-            if #available(iOS 13.0, *) {
-                if Process.shared.externalSession?.dataSource?.uiModeDisplay?.userInterface == .dark
-                {
-                    self.paddingView.layer.cornerRadius = 8
-                    self.paddingWidthConstraint.constant = 32
-                    self.imageViewWidthConstraint.constant = 22
-                }
-            }
         
             self.layoutIfNeeded()
             self.paddingView.layoutIfNeeded()

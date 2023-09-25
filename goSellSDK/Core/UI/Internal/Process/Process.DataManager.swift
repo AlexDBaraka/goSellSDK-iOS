@@ -654,7 +654,6 @@ internal extension Process {
 			let taxes           = nonnullDataSource.taxes       ?? nil
 			let destinations		= nonnullDataSource.destinations       ?? nil
 			let paymentType		= nonnullDataSource.paymentType       ?? nil
-            let topup        = nonnullDataSource.topup       ?? nil
 
 			/// the API is using destinationsGroup not destinations
 			let destinationsGroup = DestinationGroup(destinations: destinations)
@@ -667,8 +666,7 @@ internal extension Process {
 													   merchantID:		merchantID,
 													   customer:        customer.identifier,
 													   destinationGroup:	destinationsGroup,
-													   paymentType:			paymentType,
-                                                       topup: topup)
+													   paymentType:			paymentType)
 			
 			return paymentRequest
 		}
@@ -851,10 +849,6 @@ internal extension Process {
             let paymentDescription  	= dataSource.paymentDescription ?? "Payment to \(SettingsDataManager.shared.settings?.merchant.name ?? "")"
 			let paymentMetadata     	= dataSource.paymentMetadata ?? nil
 			let reference           	= dataSource.paymentReference ?? nil
-            let topup                   = dataSource.topup ?? nil
-            
-            topup?.amount = totalAmount
-            topup?.currency = dataSource.currency ?? nil
             
             var shouldSaveCard      	= saveCard ?? false
 			let statementDescriptor 	= dataSource.paymentStatementDescriptor ?? nil
@@ -917,8 +911,7 @@ internal extension Process {
 														shouldSaveCard:         shouldSaveCard,
 														statementDescriptor:    statementDescriptor,
 														requires3DSecure:       requires3DSecure,
-														receipt:                receiptSettings,
-                                                        topup:                  topup)
+														receipt:                receiptSettings)
 				
 				APIClient.shared.createCharge(with: chargeRequest) { [weak self] (charge, error) in
 					
@@ -1283,7 +1276,6 @@ internal extension Process {
 			/// the API is using destinationsGroup not destinations
 			let destinationsGroup = DestinationGroup(destinations: destinations)
 			let paymentType		= nonnullDataSource.paymentType       ?? nil
-            let topup        = nonnullDataSource.topup       ?? nil
 
 			let paymentRequest = PaymentOptionsRequest(transactionMode: transactionMode,
 													   amount:          nonnullDataSource.amount,
@@ -1294,8 +1286,7 @@ internal extension Process {
 													   merchantID:		merchantID,
 													   customer:         nonnullDataSource.customer?.identifier,
 													   destinationGroup:	destinationsGroup,
-													   paymentType:			paymentType,
-                                                       topup: topup)
+													   paymentType:			paymentType)
 			
 			return paymentRequest
 		}

@@ -65,12 +65,6 @@ internal final class ThemeManager {
         
         var selectedTheme:Theme = self.themes.first { $0.isDefault }!
         
-        if #available(iOS 13.0, *) {
-            if Process.shared.externalSession?.dataSource?.uiModeDisplay?.userInterface == .dark {
-                selectedTheme = self.themes.first { $0.dark }!
-            }
-        }
-        
         self.currentTheme	= selectedTheme
 	}
 	

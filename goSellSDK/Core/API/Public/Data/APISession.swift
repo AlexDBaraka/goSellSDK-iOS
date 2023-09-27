@@ -51,8 +51,25 @@
     /// - Parameters:
     ///   - request: Create token request.
     ///   - completion: Completion that will be called when request finishes.
-    @objc(createTokenWithRequest:completion:)
-    public func createToken(with request: CreateTokenWithCardDataRequest, completion: @escaping (Token?, TapSDKError?) -> Void) {
+    @objc(createTokenWithCardNumber:expirationMonth:expirationYear:cvc:cardHolderName:completion:)
+    public func createToken(
+        with cardNumber: String,
+        expirationMonth: String,
+        expirationYear: String,
+        cvc: String,
+        cardHolderName: String,
+        completion: @escaping (Token?, TapSDKError?) -> Void
+    ) {
+        let request = CreateTokenWithCardDataRequest(
+            card: .init(
+                number: cardNumber,
+                expirationMonth: expirationMonth,
+                expirationYear: expirationYear,
+                cvc: cvc,
+                cardholderName: cardHolderName,
+                address: nil
+            )
+        )
         
         APIClient.shared.createToken(with: request) { (response, error) in
             

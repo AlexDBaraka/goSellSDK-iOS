@@ -22,7 +22,7 @@ public struct CreateTokenWithCardDataRequest: CreateTokenRequest {
     /// Initializes the request with card.
     ///
     /// - Parameter card: Card.
-    internal init(card: CreateTokenCard) {
+    public init(card: CreateTokenCard) {
         
         self.card = card
     }

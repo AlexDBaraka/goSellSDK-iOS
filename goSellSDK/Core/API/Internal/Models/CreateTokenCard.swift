@@ -6,7 +6,7 @@
 //
 
 /// Model that holds card details required for token creation.
-internal struct CreateTokenCard {
+public struct CreateTokenCard {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -16,7 +16,7 @@ internal struct CreateTokenCard {
     
     // MARK: Methods
     
-    internal init(number: String, expirationMonth: String, expirationYear: String, cvc: String, cardholderName: String, address: Address?) {
+    public init(number: String, expirationMonth: String, expirationYear: String, cvc: String, cardholderName: String, address: Address?) {
         
         self.sensitiveCardData = SensitiveCardData(number: number, month: expirationMonth, year: expirationYear, cvc: cvc, name: cardholderName)
         self.address = address
@@ -70,7 +70,7 @@ extension CreateTokenCard: Encodable {
 	///
 	/// - Parameter encoder: Encoder.
 	/// - Throws: EncodingError
-    internal func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
         
         var container = encoder.container(keyedBy: CodingKeys.self)
         

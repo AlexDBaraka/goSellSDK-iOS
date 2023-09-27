@@ -12,8 +12,8 @@
 
 // MARK: Pay Button Titles
 
-"btn_pay_title_generic"	= "PAY";
-"btn_pay_title_amount"	= "PAY %@";
+"btn_pay_title_generic"	= "AUTHORIZE";
+"btn_pay_title_amount"	= "AUTHORIZE";
 
 // MARK: Save Button Title
 

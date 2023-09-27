@@ -230,7 +230,7 @@ internal extension Process.TapButtonHandler where Mode: Payment {
                 self.button?.setTitle(payString)
             }
         }else{
-            self.button?.setLocalizedText(.btn_pay_title_amount, amountString)
+            self.button?.setLocalizedText(.btn_pay_title_generic)
         }
 		
 		
@@ -302,7 +302,7 @@ internal extension Process.TapButtonHandler where Mode: CardTokenization {
                 self.button?.setTitle(payString)
             }
         }else{
-            self.button?.setLocalizedText(.btn_pay_title_amount, amountString)
+            self.button?.setLocalizedText(.btn_pay_title_generic)
         }
 		
 		self.button?.forceDisabled = false

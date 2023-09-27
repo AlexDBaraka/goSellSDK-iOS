@@ -6,7 +6,7 @@
 //
 
 /// Request model for token creation with card data.
-internal struct CreateTokenWithCardDataRequest: CreateTokenRequest {
+public struct CreateTokenWithCardDataRequest: CreateTokenRequest {
     
     // MARK: - Internal -
     // MARK: Properties

@@ -45,6 +45,20 @@
 			completion(response?.isDeleted ?? false, error)
 		}
 	}
+    
+    /// Creates token with a given token request, calling completion when request finishes.
+    ///
+    /// - Parameters:
+    ///   - request: Create token request.
+    ///   - completion: Completion that will be called when request finishes.
+    @objc(createTokenWithRequest:completion:)
+    public func createToken(with request: CreateTokenWithCardDataRequest, completion: @escaping (Token?, TapSDKError?) -> Void) {
+        
+        APIClient.shared.createToken(with: request) { (response, error) in
+            
+            completion(response, error)
+        }
+    }
 	
 	// MARK: - Private -
 	// MARK: Methods

@@ -28,12 +28,12 @@ internal extension SecureEncodable {
             
             throw TapSerializationError.wrongData
         }
-        
+		print("APIClient SecureEncodable encryptionKey", SettingsDataManager.shared.settings?.encryptionKey)
         guard let encryptionKey = SettingsDataManager.shared.settings?.encryptionKey else {
             
             throw TapSerializationError.wrongData
         }
-        
+		print("APIClient SecureEncodable encrypted", Crypter.encrypt(jsonString, using: encryptionKey))
         guard let encrypted = Crypter.encrypt(jsonString, using: encryptionKey) else {
             
             throw TapSerializationError.wrongData

@@ -122,6 +122,7 @@ internal final class APIClient {
             }else
             {
                 modelDictionary = try model.tap_asDictionary()
+				print("APIClient modelDictionnary", modelDictionary)
             }
         }
         catch let error {

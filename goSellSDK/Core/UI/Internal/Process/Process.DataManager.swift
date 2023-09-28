@@ -547,7 +547,7 @@ internal extension Process {
 		}
 		
 		internal func callTokenAPI(with request: CreateTokenRequest, paymentOption: PaymentOption, saveCard: Bool?) {
-			
+			print("APIClient callTokenAPI request", request)
 			UIResponder.tap_current?.resignFirstResponder()
 			
 			self.isExecutingAPICalls = true

@@ -51,13 +51,14 @@
     /// - Parameters:
     ///   - request: Create token request.
     ///   - completion: Completion that will be called when request finishes.
-    @objc(createTokenWithCardNumber:expirationMonth:expirationYear:cvc:cardHolderName:completion:)
+    @objc(createTokenWithCardNumber:expirationMonth:expirationYear:cvc:cardHolderName:encryptionKey:completion:)
     public func createToken(
         with cardNumber: String,
         expirationMonth: String,
         expirationYear: String,
         cvc: String,
         cardHolderName: String,
+        encryptionKey: String?,
         completion: @escaping (Token?, TapSDKError?) -> Void
     ) {
         let request = CreateTokenWithCardDataRequest(
@@ -67,7 +68,8 @@
                 expirationYear: expirationYear,
                 cvc: cvc,
                 cardholderName: cardHolderName,
-                address: nil
+                address: nil,
+                encryptionKey: encryptionKey
             )
         )
         

@@ -112,7 +112,7 @@ internal final class APIClient {
     ///   - error: Error in case of failure. If the closure is called it will never become nil.
     /// - Returns: Dictionary.
     internal func convertModelToDictionary<Response>(_ model: Encodable, callingCompletionOnFailure completion: Completion<Response>) -> [String: Any]? where Response: Decodable {
-        print("APIClient convertModelToDictionary model", model)
+		
         var modelDictionary: [String: Any]
         
         do {
@@ -122,7 +122,6 @@ internal final class APIClient {
             }else
             {
                 modelDictionary = try model.tap_asDictionary()
-				print("APIClient modelDictionnary", modelDictionary)
             }
         }
         catch let error {

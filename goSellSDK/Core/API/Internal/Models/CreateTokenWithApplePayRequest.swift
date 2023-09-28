@@ -26,7 +26,7 @@ internal struct CreateTokenWithApplePayRequest: CreateTokenRequest {
     internal init(applePayToken: CreateTokenApplePay) {
         
         self.applePayToken = applePayToken
-        self.card = CreateTokenCard(number: "", expirationMonth: "", expirationYear: "", cvc: "", cardholderName: "", address: nil)
+		self.card = CreateTokenCard(number: "", expirationMonth: "", expirationYear: "", cvc: "", cardholderName: "", address: nil)
     }
     
     // MARK: - Private -

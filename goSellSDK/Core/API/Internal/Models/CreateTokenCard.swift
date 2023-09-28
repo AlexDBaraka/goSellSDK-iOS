@@ -16,9 +16,18 @@ public struct CreateTokenCard {
     
     // MARK: Methods
     
-    public init(number: String, expirationMonth: String, expirationYear: String, cvc: String, cardholderName: String, address: Address?) {
+    public init(
+		number: String,
+		expirationMonth: String,
+		expirationYear: String,
+		cvc: String,
+		cardholderName: String,
+		address: Address?,
+		encryptionKey: String? = nil
+	) {
         
         self.sensitiveCardData = SensitiveCardData(number: number, month: expirationMonth, year: expirationYear, cvc: cvc, name: cardholderName)
+		self.encryptionKey = encryptionKey
         self.address = address
     }
     
@@ -27,7 +36,6 @@ public struct CreateTokenCard {
     fileprivate struct SensitiveCardData: SecureEncodable {
         
         fileprivate init(number: String, month: String, year: String, cvc: String, name: String) {
-            print("APIClient init SensitiveCardData")
             self.number = number
             self.expirationMonth = month
             self.expirationYear = year
@@ -61,6 +69,7 @@ public struct CreateTokenCard {
     
     // MARK: Properties
     private let sensitiveCardData: SensitiveCardData
+	private let encryptionKey: String?
 }
 
 // MARK: - Encodable
@@ -74,7 +83,7 @@ extension CreateTokenCard: Encodable {
         
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-        try container.encode            (try self.sensitiveCardData.secureEncoded(),    forKey: .sensitiveCardData)
+        try container.encode            (try self.sensitiveCardData.secureEncoded(encryptionKey: encryptionKey),    forKey: .sensitiveCardData)
         try container.encodeIfPresent   (self.address,                                  forKey: .address)
     }
 }

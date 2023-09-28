@@ -27,7 +27,7 @@ public struct CreateTokenCard {
     fileprivate struct SensitiveCardData: SecureEncodable {
         
         fileprivate init(number: String, month: String, year: String, cvc: String, name: String) {
-            
+            print("APIClient init SensitiveCardData")
             self.number = number
             self.expirationMonth = month
             self.expirationYear = year

@@ -23,6 +23,7 @@ internal extension SecureEncodable {
     func secureEncoded(using encoder: JSONEncoder = JSONEncoder()) throws -> String {
         
         let jsonData = try encoder.encode(self)
+		print("APIClient SecureEncodable jsonData", String(data: jsonData, encoding: .utf8))
         guard let jsonString = String(data: jsonData, encoding: .utf8) else {
             
             throw TapSerializationError.wrongData

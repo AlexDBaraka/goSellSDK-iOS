@@ -6,7 +6,7 @@
 //  Copyright © 2020 Tap Payments. All rights reserved.
 //
 
-internal struct CreateTokenApplePay: Encodable,Decodable {
+public struct CreateTokenApplePay: Encodable,Decodable {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -20,7 +20,7 @@ internal struct CreateTokenApplePay: Encodable,Decodable {
     ///
     /// - Parameters:
     ///   - appleToken: The base64 apple pay token
-    internal init(appleToken: AppleTokenModel) {
+    public init(appleToken: AppleTokenModel) {
         
         self.appleToken = appleToken
         self.paymentType = "applepay"

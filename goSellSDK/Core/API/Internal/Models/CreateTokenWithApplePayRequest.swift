@@ -7,7 +7,7 @@
 //
 
 /// Request model for token creation with apple pay data.
-internal struct CreateTokenWithApplePayRequest: CreateTokenRequest {
+public struct CreateTokenWithApplePayRequest: CreateTokenRequest {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -23,7 +23,7 @@ internal struct CreateTokenWithApplePayRequest: CreateTokenRequest {
     /// Initializes the model with applePayToken
     ///
     /// - Parameter applePayToken: applePayToken
-    internal init(applePayToken: CreateTokenApplePay) {
+    public init(applePayToken: CreateTokenApplePay) {
         
         self.applePayToken = applePayToken
 		self.card = CreateTokenCard(number: "", expirationMonth: "", expirationYear: "", cvc: "", cardholderName: "", address: nil)

@@ -84,7 +84,7 @@
     /// - Parameters:
     ///   - appleTokenData: Apple Pay Token data retrieved.
     @objc(createApplePayTokenizationApiRequestWithAppleTokenData:)
-    func createApplePayTokenizationApiRequest(with appleTokenData: Data) -> CreateTokenWithApplePayRequest? {
+    public func createApplePayTokenizationApiRequest(with appleTokenData: Data) -> CreateTokenWithApplePayRequest? {
         var token = String(data: appleTokenData, encoding: .utf8) ?? ""
         if token == ""
         {

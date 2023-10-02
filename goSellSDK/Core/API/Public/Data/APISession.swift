@@ -84,7 +84,7 @@
     /// - Parameters:
     ///   - appleTokenData: Apple Pay Token data retrieved.
     @objc(createApplePayTokenizationApiRequestWithAppleTokenData:)
-    public func createApplePayTokenizationApiRequest(with appleTokenData: Data) -> CreateTokenWithApplePayRequest? {
+    public func createApplePayTokenizationApiRequest(with appleTokenData: Data) -> [String : Any]? {
         var token = String(data: appleTokenData, encoding: .utf8) ?? ""
         if token == ""
         {
@@ -98,9 +98,7 @@
             do {
                 let dict = try JSONSerialization.jsonObject(with: jsonData, options: []) as! [String: Any]
                 let finalDict =  ["type": "applepay","token_data": dict] as [String : Any]
-                let applePayToken:CreateTokenApplePay = try CreateTokenApplePay(dictionary: finalDict)
-                let request = CreateTokenWithApplePayRequest(applePayToken: applePayToken)
-                return request
+                return finalDict
             } catch {
                 print(error.localizedDescription)
                 return nil

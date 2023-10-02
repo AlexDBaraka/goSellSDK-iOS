@@ -79,6 +79,29 @@
         }
     }
     
+    /// Creates Apple token with Tap Payments.
+    ///
+    /// - Parameters:
+    ///   - request: Create token request.
+    ///   - completion: Completion that will be called when request finishes.
+    @objc(createApplePayTokenWithDictionnary:completion:)
+    public func createApplePayToken(
+        with dictionnary: [String : Any]?,
+        completion: @escaping (Token?, TapSDKError?) -> Void
+    ) {
+        guard let dictionnary = dictionnary,
+              let applePayToken = try? CreateTokenApplePay(dictionary: dictionnary) else {
+            return
+        }
+        
+        let request = CreateTokenWithApplePayRequest(applePayToken: applePayToken)
+        
+        APIClient.shared.createToken(with: request) { (response, error) in
+            
+            completion(response, error)
+        }
+    }
+    
     /// Creates Apple Pay Token based on Apple token
     ///
     /// - Parameters:

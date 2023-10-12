@@ -2132,11 +2132,11 @@
                         <viewControllerLayoutGuide type="bottom" id="bfl-8B-89Y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2a3-ZM-oMY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdd-4D-BEt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhb-xZ-fUC" customClass="WebViewProgressBar" customModule="goSellSDK">
@@ -2508,7 +2508,7 @@ with your Fawry Pay Reference</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="rU0-K6-wi7"/>
+        <segue reference="06D-E8-sJc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ApplePayMark" width="76" height="50"/>

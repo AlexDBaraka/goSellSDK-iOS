@@ -1757,7 +1757,6 @@
 				23379A578D0DC92600B355D1 /* Pods-goSellSDK.debug.xcconfig */,
 				B31C84CE34FF74AB3830876D /* Pods-goSellSDK.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
